@@ -51,7 +51,7 @@ int notes[ ] = {262, 330, 392, 440};//c,e,g,a
  // play the note corresponding to each value on A0
   if (cm > 50) {
     // play the first frequency in the array on pin 8
-    tone(8, notes[0]);
+    tone(7, notes[0]);
     digitalWrite (8, HIGH);
     digitalWrite (9, LOW);
     digitalWrite (10,LOW);
@@ -63,7 +63,7 @@ int notes[ ] = {262, 330, 392, 440};//c,e,g,a
 
 else if (cm <= 50 && cm > 30) {
     // play the second frequency in the array on pin 8
-    tone(8, notes[1]);
+    tone(7, notes[1]);
     digitalWrite (8, LOW);
     digitalWrite (9, HIGH);
     digitalWrite (10,LOW);
@@ -72,7 +72,7 @@ else if (cm <= 50 && cm > 30) {
   }
 else if (cm <= 30 && cm > 10) {
     // play the third frequency in the array on pin 8
-    tone(8, notes[2]);
+    tone(7, notes[2]);
      digitalWrite (8,LOW);
     digitalWrite (9, LOW);
     digitalWrite (10,HIGH);
@@ -81,7 +81,7 @@ else if (cm <= 30 && cm > 10) {
   }
 else if (cm <= 10 && cm >= 0) {
     // play the fourth frequency in the array on pin 8
-    tone(8, notes[3]);
+    tone(7, notes[3]);
     digitalWrite (8, LOW);
     digitalWrite (9, LOW);
     digitalWrite (10,LOW);
